@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service Invoice Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+    <h1>Service Invoice Calculator</h1>
+    
+
+    <div class="row">
+      <div class="col-6">
+        1. Web Design (hours)
+      </div>
+      <div class="col-3">
+        <input type="number" value="0" class="qty" id="qty_webdesign" />
+      </div>
+      <div class="col-2">
+        <input type="number" readonly value="0" id="price_webdesign" />
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-6">
+        2. SEO Services (hours)
+      </div>
+      <div class="col-3">
+        <input type="number" value="0" class="qty" id="qty_seo" />
+      </div>
+      <div class="col-2">
+        <input type="number" readonly value="0" id="price_seo" />
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-6">
+        3. Content Writing (articles)
+      </div>
+      <div class="col-3">
+        <input type="number" value="0" class="qty" id="qty_content" />
+      </div>
+      <div class="col-2">
+        <input type="number" readonly value="0" id="price_content" />
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-6">
+        4. Digital Marketing (hours)
+      </div>
+      <div class="col-3">
+        <input type="number" value="0" class="qty" id="qty_digital" />
+      </div>
+      <div class="col-2">
+        <input type="number" readonly value="0" id="price_digital" />
+      </div>
+    </div>
+
+
+    <div class="total-row">
+      Total: $<span id="total_value">0</span>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
